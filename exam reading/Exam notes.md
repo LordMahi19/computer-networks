@@ -4,9 +4,9 @@ This guide provides a structured, layer-by-layer overview of the core concepts i
 
 ## Core Topics
 
-- [[1_Fundamentals_of_Computer_Networks]]
-- [[2_Application_Layer]]
-- [[3_Transport_Layer]]
-- [[4_Network_Layer]]
-- [[5_Link_Layer_and_LANs]]
-- [[6_Network_Security_and_Enterprise_Concepts]]
+- [ ] [[1_Fundamentals_of_Computer_Networks]]
+- [ ] [[2_Application_Layer]]
+- [ ] [[3_Transport_Layer]]
+- [ ] [[4_Network_Layer]]
+- [ ] [[5_Link_Layer_and_LANs]]
+- [ ] [[6_Network_Security_and_Enterprise_Concepts]]

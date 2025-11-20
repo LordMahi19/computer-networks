@@ -1,6 +1,6 @@
 # Network Performance Metrics
 
-Understanding network performance is crucial for designing and managing networks. The key metrics are delay (latency), packet loss, and throughput.
+Understanding network performance is crucial for designing and managing networks. The key metrics are ==delay (latency), packet loss, and throughput.==
 
 ### 1. Packet Delay (Latency)
 A packet experiences several types of delay as it travels from a source to a destination. The total delay at a single router (nodal delay) is the sum of four components:

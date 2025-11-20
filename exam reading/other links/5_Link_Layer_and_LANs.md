@@ -4,10 +4,10 @@ The link layer is responsible for transferring datagrams between two adjacent no
 
 ## Subtopics
 
-- [[Link_Layer_Introduction_and_Services]]
-- [[Error_Detection_and_Correction]]
-- [[Multiple_Access_Protocols]]
-- [[LANs_Addressing_and_ARP]]
-- [[Ethernet]]
-- [[Link_Layer_Switches]]
-- [[Virtual_LANs_VLANs]]
+- [ ] [[Link_Layer_Introduction_and_Services]]
+- [ ] [[Error_Detection_and_Correction]]
+- [ ] [[Multiple_Access_Protocols]]
+- [ ] [[LANs_Addressing_and_ARP]]
+- [ ] [[Ethernet]]
+- [ ] [[Link_Layer_Switches]]
+- [ ] [[Virtual_LANs_VLANs]]
