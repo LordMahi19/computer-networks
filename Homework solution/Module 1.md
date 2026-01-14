@@ -13,7 +13,7 @@ The sources highlight several key reasons for their importance:
 Key organizations responsible for these standards include the **IETF (Internet Engineering Task Force)** and the **IEEE**.
 
 ---
-# 2. List four access technologies. Classify each one as home access, enterprise access, or wide-area wireless access.
+# 2. List four ==access technologies==. Classify each one as home access, enterprise access, or wide-area wireless access.
 Based on the sources, here are four access technologies and their classifications:
 
 1. **Digital Subscriber Line (DSL)**: Classified as **home access** (residential), this technology uses existing telephone lines to transmit data and voice at different frequencies to a central office.
@@ -22,6 +22,12 @@ Based on the sources, here are four access technologies and their classification
 4. **4G/5G Cellular Networks**: Classified as **wide-area wireless access**, these are provided by mobile operators and provide coverage over large areas of up to tens of kilometers.
 ---
 # 3. Describe the most popular wireless Internet access technologies today. Compare and contrast them.
+** satelite Description:**  
+Internet provided via satellites—either geostationary (~22,000 mi altitude) or low earth orbit (~1200 mi for LEO).
+** 4G/5G Description:**  
+Fifth-generation mobile broadband designed for wide-area and mobile connectivity that includes “fixed wireless” for home internet.
+**WiFi Description:**  
+Latest Wi‑Fi standards designed for local area networks in homes, offices, and public spaces—Wi‑Fi 6 (802.11ax) and emerging Wi‑Fi 7 (802.11be).
 Compare and Contrast
 
 The following table and analysis compare these technologies based on range, speed, and structural characteristics found in the sources:
