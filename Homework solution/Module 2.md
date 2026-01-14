@@ -245,16 +245,6 @@ Protocols like **IMAP** and **SMTP** are **stateful** because they keep track of
 ---
 # 6. Besides network-related considerations such as delay, loss, and bandwidth performance, there are other important factors that go into designing a CDN server selection strategy. What are they? 
 
-
-Beyond standard network performance, CDN server selection strategies involve several key factors:
-
-- **Content Availability:** CDNs must decide which specific content to place in which nodes to bring services close to end users.
-- **Load Distribution:** Distributed databases like **DNS** are used to map a single name to multiple IP addresses, balancing traffic across replicated servers.
-- **Redirection Mechanisms:** Selection is managed via **manifest files** that provide URLs for content chunks or through DNS **CNAME** records that redirect clients to a CDN’s authoritative server.
-- **Geographic Deployment:** Strategies include "entering deep" by placing servers directly in **access networks** or "bringing home" by housing large clusters in **Points of Presence (POPs)** near those networks.
-- **Client-Side Intelligence:** Protocols like **DASH** allow the client to dynamically choose coding rates and server locations based on its own bandwidth estimations and needs.
-- **IP Protocol Compatibility:** CDNs often use **dual-stack (IPv4 and IPv6)** options to ensure connectivity across diverse network environments and meet regulatory requirements.
-
 A CDN — **Content Delivery Network** — is basically a worldwide system of servers that work together to deliver online content (like videos, images, websites) to users **faster and more reliably**.
 
 Think of it like this:

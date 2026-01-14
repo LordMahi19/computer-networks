@@ -208,7 +208,7 @@ Suppose two hosts, A and B, are separated by 20,000 kilometers and are connected
 
  1. Bandwidth-Delay Product ($R \times d_{prop}$)
 
-- **Equation:** $d_{prop} = \frac{m}{s}$.
+- ==**Equation:** $d_{prop} = \frac{m}{s}$.==
 - **Calculation:** $d_{prop} = \frac{2 \times 10^7 \text{ m}}{2.5 \times 10^8 \text{ m/s}} = 0.08 \text{ seconds}$.
 - **Product:** $R \times d_{prop} = (5 \times 10^6 \text{ bits/sec}) \times 0.08 \text{ s} = \mathbf{400,000 \text{ bits}}$.
 

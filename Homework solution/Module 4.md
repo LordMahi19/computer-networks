@@ -1,5 +1,16 @@
 # What is the role of the forwarding table within a router?
-Within a router's **data plane**, the forwarding table (also called a flow table) performs the **local action** of transferring arriving packets from an input link to the appropriate output link. It operates on a **"match plus action"** principle, where header bits are compared against entries to determine if a packet should be forwarded, dropped, or modified. For traditional destination-based forwarding, routers utilize **longest prefix matching** to select the most specific entry for a packet's destination IP address. In **Software-Defined Networking (SDN)**, these tables are more flexible, matching against multiple header fields across different layers to enable complex network-wide behaviors. To ensure efficiency at "line speed," these tables are typically stored in **decentralized input port memory** and perform lookups in a **nanosecond timeframe**.
+
+The forwarding table is the router’s **decision‑maker** for every packet that arrives. Its role is straightforward but absolutely central to how the Internet works.
+
+## 📦 What the forwarding table does
+
+- It **looks at the packet’s header** (usually the destination IP address).
+- It **finds the best matching rule** in the table.
+- It **decides the action**: which output port to send the packet to, or whether to drop or modify it.
+
+In short, it answers the question:  
+**“Where should this packet go next?”**
+
 # question 1C
 What are the smallest network masks (hold smallest possible number of hosts) for networks, where are only hosts 192.168.1.1, 192.168.1.3 and 192.168.1.4? What is smallest network mask for network with hosts 192.168.1.1-192.168.1.130? How about if we need to have at least 560 hosts in our subnetwork?
 
