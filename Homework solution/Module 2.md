@@ -17,7 +17,6 @@ Think of it like a city:
 |**Components**|Routers, switches, firewalls, bandwidth, VPNs.|Databases, user interfaces (UI), APIs, code logic.|
 |**Key Question**|"How do I get this message from Server A to Server B?"|"What does the software _do_ with the message once it arrives?"|
 
-**Would you like me to give you a specific example of how they work together in a popular app like Netflix or Uber?**
 
 # 2. What information is used by a process running on one host to identify a process running on another host?
 

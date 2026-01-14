@@ -132,7 +132,7 @@ In the scenario described, **some form of congestion control is not needed**.
 
 - **Capacity vs. Demand:** Congestion, packet delay, and loss occur in packet-switched networks when the **arrival rate of data exceeds the transmission rate** (capacity) of a link. This causes packets to queue in buffers; if the arrival rate remains higher than the capacity for too long, the buffers fill up, and packets are dropped.
 - **No Buffer Overflow:** Since it is assumed that the sum of the application data rates is **less than the capacity of each and every link**, the "work" arriving at any router will never exceed its ability to service that work.
-- **Stable Queues:** Under these conditions, the traffic intensity ($La/R$) will remain below 1, meaning average queueing delays will stay small and **infinite queues or buffer overflows will not occur**. Because there is no risk of the network becoming overloaded, the mechanisms used to "throttle" senders during periods of overload—known as congestion control—are unnecessary.
+- **Stable Queues:** Under these conditions, the ==traffic intensity ($La/R$) will== remain below 1, meaning average queueing delays will stay small and **infinite queues or buffer overflows will not occur**. Because there is no risk of the network becoming overloaded, the mechanisms used to "throttle" senders during periods of overload—known as congestion control—are unnecessary.
 # question 6
 In this problem, we consider sending real-time voice from Host A to Host B over a packet switched network (VoIP). Host A converts analog voice to a digital 64 kbps bit stream on the fly. Host A then groups the bits into 56-byte packets. There is one link between Hosts A and B; its transmission rate is 10 Mbps and its propagation delay is 10 msec. As soon as Host A gathers a packet, it sends it to Host B. As soon as Host B receives an entire packet, it converts the packet’s bits to an analog signal. How much time elapses from the time a bit is created (from the original analog signal at Host A) until the bit is decoded (as part of the analog signal at Host B)?
 
@@ -145,21 +145,21 @@ In this problem, we consider sending real-time voice from Host A to Host B over 
 
 **Problem Solution:**
 
-1. **Packetization Delay**
+1. ==**Packetization Delay**==
     
-    - $L = 56 \text{ bytes} \times 8 \text{ bits/byte} = 448 \text{ bits}$
-    - $\text{Delay} = L / \text{Bit Rate} = 448 \text{ bits} / 64,000 \text{ bps} = 0.007 \text{ s} = \mathbf{7 \text{ msec}}$
-2. **Transmission Delay ($d_{trans}$)**
+    - ==$L = 56 \text{ bytes} \times 8 \text{ bits/byte} = 448 \text{ bits}$==
+    - ==$\text{Delay} = L / \text{Bit Rate} = 448 \text{ bits} / 64,000 \text{ bps} = 0.007 \text{ s} = \mathbf{7 \text{ msec}}$==
+2. ==**Transmission Delay ($d_{trans}$)**==
     
-    - $d_{trans} = L / R$
-    - $d_{trans} = 448 \text{ bits} / 10,000,000 \text{ bps} = 0.0000448 \text{ s} = \mathbf{0.0448 \text{ msec}}$
-3. **Propagation Delay ($d_{prop}$)**
+    - ==$d_{trans} = L / R$==
+    - ==$d_{trans} = 448 \text{ bits} / 10,000,000 \text{ bps} = 0.0000448 \text{ s} = \mathbf{0.0448 \text{ msec}}$==
+3. ==**Propagation Delay ($d_{prop}$)**==
     
-    - $d_{prop} = \mathbf{10 \text{ msec}}$ (Given)
-4. **Total Elapsed Time**
+    - ==$d_{prop} = \mathbf{10 \text{ msec}}$ (Given)==
+4. ==**Total Elapsed Time**==
     
-    - $\text{Total Time} = \text{Packetization Delay} + d_{trans} + d_{prop}$
-    - $\text{Total Time} = 7 \text{ msec} + 0.0448 \text{ msec} + 10 \text{ msec} = \mathbf{17.0448 \text{ msec}}$
+    - ==$\text{Total Time} = \text{Packetization Delay} + d_{trans} + d_{prop}$==
+    - ==$\text{Total Time} = 7 \text{ msec} + 0.0448 \text{ msec} + 10 \text{ msec} = \mathbf{17.0448 \text{ msec}}$==
 
 _Note: The specific values (64 kbps, 56 bytes, 10 Mbps, 10 msec) are from your query and are not present in the provided sources; you may want to independently verify these values._
 # question 7
@@ -178,7 +178,8 @@ Suppose you would like to urgently deliver 40 terabytes of data from Boston to L
     
 2. **Convert transmission rate to bits per second ($R$):** $R = 100 \text{ Mbps} = 100 \times 10^6 \text{ bits/sec} = 10^8 \text{ bits/sec}$.
     
-3. **Calculate transmission delay ($d_{trans}$):** $\text{Equation: } d_{trans} = \frac{L}{R}$. $d_{trans} = \frac{3.2 \times 10^{14} \text{ bits}}{10^8 \text{ bits/sec}} = 3,200,000 \text{ seconds}$.
+3. **Calculate transmission delay ($d_{trans}$):** $\text{Equation: } d_{trans} = \frac{L}{R}$
+										$d_{trans} = \frac{3.2 \times 10^{14} \text{ bits}}{10^8 \text{ bits/sec}} = 3,200,000 \text{ seconds}$.
     
 4. **Convert transmission delay to days:** $\frac{3,200,000 \text{ seconds}}{3,600 \text{ sec/hour}} \approx 888.89 \text{ hours}$. $\frac{888.89 \text{ hours}}{24 \text{ hours/day}} \approx \mathbf{37.04 \text{ days}}$.
     
@@ -187,7 +188,7 @@ Suppose you would like to urgently deliver 40 terabytes of data from Boston to L
 # question 8
 Suppose two hosts, A and B, are separated by 20,000 kilometers and are connected by a direct link of R = 5 Mbps. Suppose the propagation speed over the link is 2.5*108 meters/sec. 
 
-1. Calculate the bandwidth-delay product, R *dprop
+1. Calculate the bandwidth-delay product==, R *dprop==
     
 2. Consider sending file of 800,000 bits from host A to host B. Suppose the file is sent continuously as one large message. What is the maximum number of bits that will be in the link at any given time?
     
@@ -213,9 +214,19 @@ Suppose two hosts, A and B, are separated by 20,000 kilometers and are connected
 
  2. Maximum Number of Bits in the Link
 
-- **Condition:** The maximum number of bits in the link at any given time is the minimum of the file size ($L$) and the bandwidth-delay product ($R \times d_{prop}$).
+- **Condition:** The maximum number of bits in the link at any given time is the minimum of the file size ($L$) and the ==bandwidth-delay product ($R \times d_{prop}$).==
 - **Comparison:** $L = 800,000 \text{ bits}$ and $R \times d_{prop} = 400,000 \text{ bits}$.
 - **Result:** **400,000 bits**.
+
+	The link can only hold as many bits as its capacity allows.  
+	So the number of bits “in the link” at any moment is whichever is smaller:
+	
+	- the size of the file
+	- the link’s capacity (the bandwidth–delay product)
+	
+	Since the file is **800,000 bits** but the link can only hold **400,000 bits**, the link fills up to its limit.
+	
+	**Final answer: 400,000 bits are in the link at any given time.**
 
 3. Interpretation of the Bandwidth-Delay Product
 
@@ -225,10 +236,35 @@ The bandwidth-delay product represents the **maximum number of bits that can be 
 
 - **Equation:** $\text{Width} = \frac{s}{R}$.
 - **Calculation:** $\text{Width} = \frac{2.5 \times 10^8 \text{ m/s}}{5 \times 10^6 \text{ bits/sec}} = \mathbf{50 \text{ meters}}$.
+	In that formula, **(s)** represents the **propagation speed of the signal in the medium**.
+	
+	### 🌐 What “propagation speed” means
+	
+	It’s the speed at which electrical or optical signals travel through the link (copper, fiber, etc.).
+	
+	- In copper or fiber, this is typically around **(2 \times 108) to (2.5 \times 108) m/s**, which is roughly **two‑thirds the speed of light**.
+	
+	### Why it appears in the bit‑width formula
+	
+	A single bit occupies some physical length on the wire.
+	
+	- If the signal travels at speed (s)
+	- And bits are sent at rate (R) bits/sec
+	
+	Then each bit lasts (1/R) seconds, and during that time it travels:
+	
+	[ \text{Width of a bit} = s \cdot \frac{1}{R} = \frac{s}{R} ]
+	
+	So in your example:
+	
+	- (s = 2.5 \times 10^8) m/s → propagation speed
+	- (R = 5 \times 10^6) bits/s → transmission rate
+	
+	Which gives a **50‑meter‑long bit** on the link.
 
  5. General Expression for the Width of a Bit
 
-The general expression for the width of a bit, based on the definitions of propagation speed ($s$) and transmission rate ($R$), is: **$\text{Width} = \frac{s}{R}$**.
+==The general expression for the width of a bit, based on the definitions of propagation speed ($s$) and transmission rate ($R$), is: **$\text{Width} = \frac{s}{R}$**.==
 
 _(Note: While the length of the link $m$ is used to calculate the total number of bits the link can hold, the physical width of a single bit is independent of the link's total length.)_
 
